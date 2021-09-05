@@ -4,7 +4,7 @@ const path = require('path')
 let window = null
 let tray = null
 
-app.dock.hide()
+//app.dock.isVisible = true;
 
 // Wait until the app is ready
 app.once('ready', () => {
@@ -29,7 +29,7 @@ app.once('ready', () => {
     }
   })
 
-  const url = "https://electronjs.org"
+  const url = "http://www.google.co.in"
   window.loadURL(url)
 
   window.once('ready-to-show', () => {
